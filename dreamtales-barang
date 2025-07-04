@@ -1,8 +1,0 @@
-CREATE TABLE barang (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nama_barang VARCHAR(255) NOT NULL,
-    gambar VARCHAR(255),
-    quantity INT NOT NULL,
-    harga DOUBLE(15,2) NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
