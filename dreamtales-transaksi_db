@@ -1,0 +1,14 @@
+CREATE TABLE transaksi_db (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  id_users INT,
+  id_barang INT,
+  jumlah_barang INT,
+  total_harga DOUBLE,
+  nama_penerima VARCHAR(100),
+  alamat TEXT,
+  metode_pembayaran VARCHAR(50),
+  status_pesanan VARCHAR(50),
+  tanggal DATETIME DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (id_users) REFERENCES users(id),
+  FOREIGN KEY (id_barang) REFERENCES barang(id)
+);
